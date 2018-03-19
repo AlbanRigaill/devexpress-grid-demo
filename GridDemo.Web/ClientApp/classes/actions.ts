@@ -4,7 +4,7 @@
 
 export interface ICustomerGridPageAction {
     type: 'CUSTOMER_GRID_PAGE';
-    currentPage: number;
+    currentPage?: number;
 }
 
 export interface ICustomerGridSortingAction {
@@ -19,13 +19,13 @@ export interface ICustomerGridPageSizeAction {
 
 export interface ICustomerGridFilterAction {
     type: 'CUSTOMER_GRID_FILTER';
-    filters: any[];
+    filters?: any[];
 }
 
 export interface ICustomerGridSelectionAction {
     type: 'CUSTOMER_GRID_SELECTION';
-    selection: number[];
-    actualSelection: number[];
+    selection?: number[];
+    actualSelection?: number[];
 }
 
 export interface ICustomerGridRequestAction {

@@ -173,8 +173,7 @@ export const reducer: Reducer<State> = (state: State, incomingAction: Action) =>
         case 'CUSTOMER_GRID_REQUEST':
             return {
                 ...state,
-                payload: action.payload,
-                rows: state.rows
+                payload: action.payload
             };
         case 'CUSTOMER_GRID_RECEIVE':
             if (action.payload === state.payload) {
