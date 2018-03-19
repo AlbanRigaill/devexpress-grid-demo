@@ -40,5 +40,11 @@
     "webpack": "2.5.1",
     "webpack-hot-middleware": "2.18.2",
     "webpack-merge": "4.1.0"
+  },
+  "dependencies": {
+    "@devexpress/dx-react-core": "^1.1.0",
+    "@devexpress/dx-react-grid": "^1.1.0",
+    "@devexpress/dx-react-grid-material-ui": "^1.1.0",
+    "material-ui": "^1.0.0-beta.38"
   }
 }
