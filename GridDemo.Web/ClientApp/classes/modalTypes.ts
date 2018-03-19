@@ -1,1 +1,1 @@
-﻿export const ModalTypeCustomerDetail: number = 1;
+﻿export const ModalTypeDefault: number = 1;

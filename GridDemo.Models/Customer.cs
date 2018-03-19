@@ -7,6 +7,5 @@ namespace GridDemo.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
-        public IList<Application> Applications { get; set; }
     }
 }

@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Route } from 'react-router-dom';
 import { Layout } from './components/Layout';
 import HomeComponent from './components/Home';
-import CustomerGridComponent from './components/customer/grid';
+import CustomerGridComponent from './components/CustomerGrid';
 
 export const routes = <Layout>
     <Route exact path="/" component={HomeComponent} />

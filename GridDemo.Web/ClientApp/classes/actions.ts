@@ -9,7 +9,7 @@ export interface ICustomerGridPageAction {
 
 export interface ICustomerGridSortingAction {
     type: 'CUSTOMER_GRID_SORTING';
-    sorting?: Utils.Sorting[];
+    sorting?: any[];
 }
 
 export interface ICustomerGridPageSizeAction {
@@ -19,7 +19,7 @@ export interface ICustomerGridPageSizeAction {
 
 export interface ICustomerGridFilterAction {
     type: 'CUSTOMER_GRID_FILTER';
-    filters: Utils.Filter[];
+    filters: any[];
 }
 
 export interface ICustomerGridSelectionAction {
@@ -36,43 +36,6 @@ export interface ICustomerGridRequestAction {
 export interface ICustomerGridReceiveAction {
     type: 'CUSTOMER_GRID_RECEIVE';
     payload?: string;
-    customers?: Utils.CustomerModel[];
+    results?: Utils.Customer[];
     totalCount?: number;
-}
-
-
-// modal
-
-export interface IModalOpenAction {
-    type: 'MODAL_OPEN';
-    title?: string;
-    modalType?: number;
-}
-
-export interface IModalCloseAction {
-    type: 'MODAL_CLOSE';
-}
-
-// snackbars
-
-export interface ISnackbarOpenAction {
-    type: 'SNACKBAR_OPEN';
-    text?: string;
-}
-
-export interface ISnackbarCloseAction {
-    type: 'SNACKBAR_CLOSE';
-}
-
-// customer / detail
-
-export interface ICustomerDetailRequestAction {
-    type: 'CUSTOMER_DETAIL_REQUEST';
-    payload?: string;
-}
-
-export interface ICustomerDetailReceiveAction {
-    type: 'CUSTOMER_DETAIL_RECEIVE';
-    payload?: string;
-    customers?: Utils.CustomerModel[];
 }

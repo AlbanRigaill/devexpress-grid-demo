@@ -42,10 +42,8 @@
     <None Remove="ClientApp\components\CustomerDetail.tsx" />
     <None Remove="ClientApp\components\ModalTest.tsx" />
     <None Remove="ClientApp\components\ModalWrapper.tsx" />
-    <None Remove="ClientApp\components\snackbar\Wrapper.tsx" />
     <None Remove="ClientApp\store\applicationEdit.ts" />
     <None Remove="ClientApp\store\customerDetail.ts" />
-    <None Remove="ClientApp\store\snackbar.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -56,13 +54,7 @@
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\classes\actions.ts" />
     <TypeScriptCompile Include="ClientApp\classes\utils.ts" />
-    <TypeScriptCompile Include="ClientApp\components\customer\Detail.tsx" />
-    <TypeScriptCompile Include="ClientApp\components\modal\Wrapper.tsx" />
     <TypeScriptCompile Include="ClientApp\classes\modalTypes.ts" />
-    <TypeScriptCompile Include="ClientApp\components\snackbar\Wrapper.tsx" />
-    <TypeScriptCompile Include="ClientApp\store\snackbar.ts" />
-    <TypeScriptCompile Include="ClientApp\store\modal.ts" />
-    <TypeScriptCompile Include="ClientApp\store\customer\detail.ts" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">

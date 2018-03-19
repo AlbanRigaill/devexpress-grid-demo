@@ -1,21 +1,10 @@
-﻿export interface CustomersResponse {
-    customers: CustomerModel[];
+﻿export interface CustomerResponse {
+    results: Customer[];
     totalCount: number;
 }
 
-export interface CustomerModel {
+export interface Customer {
     id: number;
     name: string;
     email: string;
 }
-
-export interface Sorting {
-    columnName: string;
-    direction: string;
-}
-
-export interface Filter {
-    columnName: string;
-    value: string;
-}
-
